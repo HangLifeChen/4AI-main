@@ -7,6 +7,7 @@ import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { WagmiAdapter } from '@reown/appkit-adapter-wagmi'
 import { bsc, sepolia } from '@reown/appkit/networks'
 import { wallectConnectId } from '@/utils'
+import { robinhoodChain } from './wagmi-config'
 
 const queryClient = new QueryClient()
 
@@ -16,8 +17,9 @@ const projectId = wallectConnectId
 export const wagmiAdapter = new WagmiAdapter({
   ssr: true,
   projectId,
-  networks: [bsc],
+  networks: [robinhoodChain, bsc],
   transports: {
+    [robinhoodChain.id]: http(),
     [bsc.id]: http('https://bsc.meowrpc.com')
   }
   // networks: [sepolia],
@@ -25,7 +27,8 @@ export const wagmiAdapter = new WagmiAdapter({
 
 createAppKit({
   adapters: [wagmiAdapter],
-  networks: [bsc],
+  networks: [robinhoodChain, bsc],
+  defaultNetwork: robinhoodChain,
   // networks: [sepolia],
   projectId,
   features: {
@@ -36,7 +39,7 @@ createAppKit({
   metadata: {
     name: '4AI',
     description: '4AI',
-    url: 'http://localhost:3000',
+    url: 'https://4ai.network',
     icons: ['https://fav.farm/🦄']
   },
 })

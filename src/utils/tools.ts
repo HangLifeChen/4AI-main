@@ -36,7 +36,7 @@ export const isMobile = () => {
 };
 
 export const isValidCustomUrl = (url: string): boolean => {
-  const pattern = /^https:\/\/(lab\.4bsc\.ai|4bsc\.ai)\/agenthub\/\d+$/;
+  const pattern = /^https:\/\/(lab\.4bsc\.ai|4bsc\.ai|www\.4ai\.network|4ai\.network)\/agenthub\/\d+$/;
   return pattern.test(url);
 }
 

@@ -22,11 +22,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: '4AI',
     description: '4AI is a decentralized AI marketplace on BSC where anyone can request, build and deploy AI agents.',
-    url: 'https://4bsc.ai/',
+    url: 'https://4ai.network/',
     siteName: '4AI',
     images: [
       {
-        url: 'https://4bsc.ai/banner.png',
+        url: 'https://4ai.network/banner.png',
       },
     ],
     type: 'website',
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: '4AI',
     description: '4AI is a decentralized AI marketplace on BSC where anyone can request, build and deploy AI agents.',
-    images: ['https://4bsc.ai/banner.png'],
+    images: ['https://4ai.network/banner.png'],
   },
 };
 

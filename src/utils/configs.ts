@@ -16,8 +16,8 @@ export const resourceLinks = {
   github: 'https://github.com/4ainet/4AI-Agent-Space',
   link3: 'https://linktr.ee/4ainet',
 
-  docs: 'https://docs.4ai.network',
-  gitbook: 'https://docs.4ai.network',
+  docs: 'https://docs.4ai.network/',
+  gitbook: 'https://docs.4ai.network/',
 
   nebulaiNetwork: 'https://github.com/NebulaiNetwork',
 };
