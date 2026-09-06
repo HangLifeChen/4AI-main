@@ -1,0 +1,8 @@
+.gray-filter {
+  filter: grayscale(80%);
+  transition: 0.5s;
+
+  &:hover {
+    filter: grayscale(0%);
+  }
+}

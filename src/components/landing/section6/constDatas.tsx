@@ -1,0 +1,38 @@
+export const flowList = [
+  {
+    icon: './home/section6_icon1.svg',
+    arrowsBg: './home/section6_arrows1.svg',
+    arrowsX: 120,
+    arrowsY: 58,
+    defaultBg: './home/section6_default_bg1.svg',
+    activeBg: './home/section6_default_bg1.svg',
+    desc: 'Connects users to Requests, Agent Hub, and Agent Space, enabling seamless navigation and interaction.',
+  },
+  {
+    icon: './home/section6_icon2.svg',
+    arrowsBg: './home/section6_arrows2.svg',
+    arrowsX: 302,
+    arrowsY: -58,
+    defaultBg: './home/section6_default_bg2.svg',
+    activeBg: './home/section6_active_bg2.svg',
+    desc: 'Bridges user needs and available AI agents, ensuring requests are matched with suitable solutions.',
+  },
+  {
+    icon: './home/section6_icon3.svg',
+    arrowsBg: './home/section6_arrows3.svg',
+    arrowsX: 119,
+    arrowsY: -260,
+    defaultBg: './home/section6_default_bg3.svg',
+    activeBg: './home/section6_active_bg3.svg',
+    desc: 'Acts as the processing layer where agents collaborate to execute tasks and fulfill requests.',
+  },
+  {
+    icon: './home/section6_icon4.svg',
+    arrowsBg: './home/section6_arrows4.svg',
+    arrowsX: 222,
+    arrowsY: -58,
+    defaultBg: './home/section6_default_bg4.svg',
+    activeBg: './home/section6_active_bg4.svg',
+    desc: 'Provides the underlying infrastructure to support secure data flow and decentralized operations.',
+  },
+];

@@ -1,0 +1,14 @@
+.rich-text-editor-wrap,
+.rich-text-view-wrap {
+  .slate-editor {
+    background: #000;
+    padding: 24px;
+    border-radius: 0 0 8px 8px;
+    min-height: 300px;
+    max-height: 500px;
+  }
+}
+
+div[data-radix-popper-content-wrapper] {
+  z-index: 9999 !important;
+}

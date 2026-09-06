@@ -1,0 +1,57 @@
+@property --border-gradient-angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
+}
+
+.card-wrapper {
+  background-size: contain;
+  padding: 1px;
+  /* animation: buttonBorderSpin 5s linear infinite 0ms; */
+  background-image:
+    conic-gradient(from var(--border-gradient-angle) at 50% 50%,
+      transparent, #FCBC19 14%, transparent 17%),
+    conic-gradient(from calc(var(--border-gradient-angle) + 0.5turn) at 50% 50%,
+      transparent, #FCBC19 14%, transparent 17%);
+  background-blend-mode: screen;
+  animation: buttonBorderSpin 5s linear infinite;
+}
+
+@keyframes buttonBorderSpin {
+  0% {
+    --border-gradient-angle: 0turn;
+  }
+
+  100% {
+    --border-gradient-angle: 1turn;
+  }
+}
+
+.editor-class .slate-editor {
+  background: transparent !important;
+  padding: 0 !important;
+  min-height: auto !important;
+}
+
+
+.shadow-box {
+  box-shadow: 0px 7px 32px 0px rgba(12, 161, 254, 0.26) inset;
+}
+
+.hover-bg-override:hover {
+  background-color: #343A46 !important;
+  background-image: none;
+  border-color: rgba(255, 255, 255, 0.13) !important;
+}
+
+.common-title {
+  background-image: linear-gradient(90deg, #FFFEFE 35%, #BDBDBD 100%);
+  background-blend-mode: soft-light;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.data-\[placeholder\]\:text-muted-foreground[data-placeholder] {
+  color: var(--common-white-eight) !important;
+}

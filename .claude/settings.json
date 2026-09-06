@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pnpm -v)",
+      "Bash(pnpm install *)",
+      "Bash(pnpm dev *)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" --max-time 30 http://localhost:3001)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" --max-time 120 http://localhost:3001)",
+      "Bash(node -e ' *)",
+      "WebSearch",
+      "Bash(curl -s --max-time 20 \"https://explorer-api.walletconnect.com/v3/wallets?search=robinhood&count=5\")",
+      "Bash(python3 -c ' *)"
+    ]
+  }
+}
