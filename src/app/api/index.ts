@@ -5,11 +5,15 @@ import { requestDomain, cryptoRawKey } from '@/utils/configs';
 
 export const bucket = 'nebulai-agent-hub';
 
+// ⚠️ AWS 泄露扫描会自动隔离出现在代码里的密钥(AWSCompromisedKeyQuarantineV3),
+//    密钥只能放 .env.production(不带 NEXT_PUBLIC_ 前缀,仅服务端可见):
+//    AWS_ACCESS_KEY_ID=xxx
+//    AWS_SECRET_ACCESS_KEY=xxx
 export const s3Client = new S3Client({
   region: 'us-east-1',
   credentials: {
-    accessKeyId: 'AKIARFCORH75G55AK6E4',
-    secretAccessKey: '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',
+    accessKeyId: process.env.AWS_ACCESS_KEY_ID!,
+    secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY!,
   },
 });
 
